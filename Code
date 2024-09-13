@@ -26,10 +26,25 @@ dictionary = {
 'w' : ".__", 
 'x' : "_.._", 
 'y' : "_.__", 
-'z' : "__."
+'z' : "__.",
+' ' : " ",
+'.' : "._._._",
+',' : "__..__",
+'?' : "..__..",
+'!' : "_._.__",
+'0' : "_____",
+'1' : ".____",
+'2' : "..___",
+'3' : "...__",
+'4' : "...._",
+'5' : ".....",
+'6' : "_....",
+'7' : "__...",
+'8' : "___..",
+'9' : "____."
 }
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 print("\n--Welcome to The Morse Code Translator!--")
 print("Please enter the phrase you'd like converted to Morse Code: ")
@@ -38,6 +53,5 @@ userInput = input().lower()
 
 for x in userInput:
     translatedPhrase += dictionary[x] + " / "
-
 
 print(translatedPhrase)
